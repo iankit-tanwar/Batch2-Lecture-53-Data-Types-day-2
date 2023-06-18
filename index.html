@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batch2 Lecture 53 Data Types day 2</title>
+    <link rel="stylesheet" href="./css/style.cs">
+
+    <style>
+
+    </style>
+
+    <script src="./js/script.js">
+
+    </script>
+</head>
+
+<body>
+    <h1>Javascript Datatypes</h1>
+    <ol>
+        <li>String ''/""/``</li>
+        <li>Number 3,9.5</li>
+        <li>Object {}</li>
+    </ol>
+
+    <p id="news1"></p>
+
+    <p class="news2"></p>
+
+    <script>
+
+        let news1 = {
+            //1 Property : Value
+            w1: "The",
+            w2: "proposal",
+            w3: " involves",
+            w4: `the`,
+            w5: 'use of',
+            w6: "PAN"
+
+
+            //2.
+        } // its is a Javascript object
+
+        //now there are 4 way to see JS output
+
+        // Temprary Testing
+
+        let x = news1.w1 + ' ' + news1.w2 + " " + news1.w3 + ` ` + news1.w4 + ` ` + news1.w5 + " " + news1.w6;
+        console.log(x);
+
+        // i am not using Dry Principal 
+        document.getElementById('news1').innerHTML = 'hello';
+        document.getElementById('news1').style.color = 'red';
+        document.getElementById(`news1`).innerHTML = x;
+
+
+
+        /* After the Odisha tragedy, family says still not allowed to meet train driver */
+
+        let news2 = {
+            //1 Property : Value
+            w1: 'After',
+            w2: "the",
+            w3: `Odisha`,
+            w4: 'tragedy,',
+            w5: "family",
+            w6: 'says',
+            w7: "still",
+            w8: `not`,
+            w9: 'allowed,',
+            w10: "to",
+            w11: "meet",
+            w12: `train`,
+            w13: 'driver,',
+        
+
+        }// Js Object
+
+        let y = news2.w1+' '+news2.w2+' '+news2.w3+' '+news2.w4+' '+news2.w5+' '+news2.w6+' '+news2.w7+' '+news2.w8+' '+news2.w9+
+             ' '+news2.w10+' '+news2.w11+' '+news2.w12+' '+news2.w13+' '+news2.w14+' '+news2.w15
+             
+             console.log(y);
+
+
+             // now this time iam using dry principal
+
+             let z = document.querySelector('p.news2');
+
+             z.innerHTML= y;
+
+             // i can change the color with the help of javascript code 
+             z.style.color=" green";
+
+
+
+    </script>
+
+</body>
+
+</html>
